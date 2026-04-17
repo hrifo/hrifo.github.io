@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todoing - Política de Privacidad</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f4f6fb;
+            --card: #ffffff;
+            --text: #1a1a2e;
+            --muted: #5a5a7a;
+            --accent: #4f6ef7;
+            --border: #e2e6f3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(180deg, #f4f6fb 0%, #e8edf8 100%);
+            color: var(--text);
+        }
+        main {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px 40px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 36px;
+            box-shadow: 0 18px 45px rgba(0,0,0,.07);
+        }
+        h1, h2 {
+            margin-top: 0;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 1.1rem;
+            margin-top: 28px;
+            color: var(--accent);
+        }
+        p, li {
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+        .meta {
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+        a { color: var(--accent); }
+    </style>
+</head>
+<body>
+<main>
+    <section class="card">
+        <h1>Política de Privacidad de Todoing</h1>
+        <p class="meta">Última actualización: 17 de abril de 2026</p>
+
+        <p>Todoing es una aplicación móvil para gestionar tareas irregulares y poco frecuentes, con soporte opcional para listas familiares compartidas. Esta política explica qué información usa la app y cómo se maneja.</p>
+
+        <h2>1. Datos que recopila la app</h2>
+        <p>Todoing puede recopilar los siguientes datos para ofrecer sus funciones:</p>
+        <ul>
+            <li><strong>Cuenta de Google:</strong> nombre, dirección de correo electrónico y foto de perfil, obtenidos mediante Google Sign-In, para identificar al usuario y sincronizar sus datos.</li>
+            <li><strong>Tareas:</strong> título, descripción, fechas y configuración de las tareas que el usuario crea dentro de la app.</li>
+            <li><strong>Token de notificaciones push:</strong> identificador del dispositivo generado por Expo Notifications, utilizado para enviar notificaciones cuando un familiar agrega una tarea compartida.</li>
+            <li><strong>Información de suscripción:</strong> estado del plan (gratuito, Pro o Familiar), procesado mediante RevenueCat.</li>
+        </ul>
+
+        <h2>2. Almacenamiento y sincronización</h2>
+        <p>Las tareas se guardan localmente en el dispositivo. Si el usuario activa la colaboración familiar, las tareas compartidas se sincronizan con servidores de Supabase para permitir el acceso desde múltiples dispositivos. La autenticación se gestiona de forma segura mediante tokens de Google OAuth.</p>
+
+        <h2>3. Notificaciones push</h2>
+        <p>Cuando el usuario pertenece a un grupo familiar dentro de la app, puede recibir notificaciones cuando otro miembro agrega una tarea. El token de notificaciones se almacena de forma segura en los servidores de Supabase y no se comparte con terceros distintos al servicio de entrega de notificaciones de Expo.</p>
+
+        <h2>4. Permisos</h2>
+        <p>La app puede solicitar los siguientes permisos:</p>
+        <ul>
+            <li><strong>Notificaciones:</strong> para informar al usuario sobre actividad en tareas familiares compartidas.</li>
+            <li><strong>Internet:</strong> para sincronizar tareas y autenticar la cuenta de Google.</li>
+        </ul>
+
+        <h2>5. Servicios de terceros</h2>
+        <p>Todoing utiliza los siguientes servicios externos, cada uno con su propia política de privacidad:</p>
+        <ul>
+            <li><strong>Google Sign-In</strong> – autenticación de usuario.</li>
+            <li><strong>Supabase</strong> – base de datos y almacenamiento de tareas sincronizadas.</li>
+            <li><strong>RevenueCat</strong> – gestión de suscripciones en la app.</li>
+            <li><strong>Firebase (Google)</strong> – análisis de errores y estabilidad de la app.</li>
+            <li><strong>Expo</strong> – entrega de notificaciones push.</li>
+        </ul>
+
+        <h2>6. Compartición de datos</h2>
+        <p>Todoing no vende información personal. Los datos de tareas de un grupo familiar se comparten únicamente entre los miembros de ese grupo, previa aceptación de invitación.</p>
+
+        <h2>7. Seguridad</h2>
+        <p>La comunicación con los servidores se realiza mediante conexiones cifradas (HTTPS). Aun así, ningún sistema es completamente infalible y el usuario utiliza la app bajo su propia responsabilidad.</p>
+
+        <h2>8. Uso por menores</h2>
+        <p>Todoing no está dirigida específicamente a niños menores de 13 años. No recopilamos intencionalmente datos de menores.</p>
+
+        <h2>9. Eliminación de datos</h2>
+        <p>El usuario puede eliminar su cuenta y todos sus datos asociados contactando al desarrollador a través de los datos de contacto publicados en Google Play. Las tareas locales pueden borrarse directamente desde la aplicación.</p>
+
+        <h2>10. Cambios a esta política</h2>
+        <p>Esta política puede actualizarse en el futuro. Cualquier cambio relevante se reflejará en esta misma página.</p>
+
+        <h2>11. Contacto</h2>
+        <p>Si tienes preguntas sobre esta política, puedes contactar al desarrollador a través de los datos de contacto publicados en Google Play.</p>
+    </section>
+</main>
+</body>
+</html>
